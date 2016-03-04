@@ -1,0 +1,21 @@
+<h2>Home Page</h2>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 text center">
+        <h1>TO-DO</h1>
+        <div ng-repeat="chore in taskData">
+            <h2>{{chore.task}}</h2>
+            <p>{{chore.time}}</p>
+            <p>{{chore.date | date}}</p>
+        </div>
+    </div>
+</div>
+
+<!--<div class="col-md-6 col-md-offset-3 text center">-->
+    <!--<h1>TA-DAH</h1>-->
+    <!--<div ng-repeat="done in taskData">-->
+        <!--<h2>{{done.task}}</h2>-->
+        <!--<p>{{done.time}}</p>-->
+        <!--<p>{{done.date | date}}</p>-->
+    <!--</div>-->
+<!--</div>-->

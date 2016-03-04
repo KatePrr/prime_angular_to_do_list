@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-3 col-md-offset-3 text center">
+        <h1>TO-DO</h1>
+        <div ng-repeat="chore in taskData">
+            <h2>{{chore.task}}</h2>
+            <p>{{chore.time}}</p>
+            <p>{{chore.date | date}}</p>
+
+            <button class="btn btn-info" ng-click="completeChore(chore._id)">Complete</button>
+            <button class="btn btn-info" ng-click="deleteChore(chore._id)">Delete</button>
+
+            <!--<button ng-click="complete(chore._id)">Complete</button>-->
+            <!--<button ng-click="delete(chore._id)">Delete</button>-->
+        </div>
+        <!--<button class="btn btn-info" ng-click="complete(chore._id)">Complete</button>-->
+        <!--<button class="btn btn-info" ng-click="delete(chore._id">Delete</button>-->
+    </div>
+
+
+
+<!--<div class="col-md-3 col-md-offset-3 text center">-->
+<h1>TA-DAH</h1>
+<!--<div ng-repeat="done in taskData">-->
+    <!--<h2>{{done.task}}</h2>-->
+    <!--<p>{{done.time}}</p>-->
+    <!--<p>{{done.date | date}}</p>-->
+<!--</div>-->
+<!--</div>-->
+</div>
